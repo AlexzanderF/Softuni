@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/team.css">
+  <link rel="stylesheet" type="text/css" href="css/details.css">
+  <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+  <title>Team Managers App</title>
+</head>
+
+<body>
+  <div id="infoBox" class="notification" disabled></div>
+  <div id="errorBox" class="notification" disabled></div>
+  <div id="main">
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+  <script>
+    firebase.initializeApp({
+      apiKey: "AIzaSyBL7Nkg4yCOoONu9p2u6XkEHr9m_4y4iIo",
+      authDomain: "softuni-test-78b9f.firebaseapp.com",
+      databaseURL: "https://softuni-test-78b9f.firebaseio.com",
+      projectId: "softuni-test-78b9f",
+      storageBucket: "softuni-test-78b9f.appspot.com",
+      messagingSenderId: "630311991132",
+      appId: "1:630311991132:web:fcfc939809dac95eeab399"
+    });
+    const auth = firebase.auth();
+    const database = firebase.database();
+  </script>
+
+  <script type="module" src="scripts/app.js"></script>
+
+</body>
+
+</html>

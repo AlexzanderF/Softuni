@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application 2020</title>
+    <link rel="icon" type="image/png" href="../static/favicon.ico">
+    <link href="../static/css/site.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./src/app.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+
+        <section class="notifications" style="display: none;">
+            <p class="notification-message" id="errorBox">Message...</p>
+        </section>
+        <section class="notifications" style="display: none;background-color:rgba(1, 131, 29, 0.541);">
+            <p class="notification-message" id="successBox">Message...</p>
+        </section>
+
+    </div>
+    <footer class="page-footer font-small">
+        <div class="footer-copyright text-center py-3">© 2020
+            <a href="https://softuni.bg/trainings/2840/js-applications-june-2020/internal" class="text-dark">JS
+                Applications</a>
+        </div>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/sammy/lib/sammy.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script>
+        firebase.initializeApp({
+            apiKey: "AIzaSyCroqaVgyCKkHFsRciPa8doHxgxFx9aNL4",
+            authDomain: "movies-spa-54c0b.firebaseapp.com",
+            projectId: "movies-spa-54c0b",
+            storageBucket: "movies-spa-54c0b.appspot.com",
+            messagingSenderId: "1045637338564",
+            appId: "1:1045637338564:web:761d0220e3c5c60b030091"
+        });
+        const auth = firebase.auth();
+    </script>
+</body>
+
+</html>

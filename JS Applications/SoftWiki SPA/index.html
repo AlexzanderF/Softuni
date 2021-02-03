@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body id="root">
+
+    <!-- No articles message -->
+    <!-- <h3 class="no-articles">No articles yet</h3> -->
+
+    <!-- Footer -->
+    <footer>My Site © Show info....</footer>
+</body>
+
+<!-- Modules -->
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/handlebars/dist/handlebars.js"></script>
+<script src="/node_modules/sammy/lib/sammy.js"></script>
+<script src="/node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script>
+    firebase.initializeApp({
+        apiKey: "AIzaSyBIeAwkB1rPSnmvo_hI4izbr04N-wTtMVs",
+        authDomain: "softwiki-spa-ca536.firebaseapp.com",
+        projectId: "softwiki-spa-ca536",
+        storageBucket: "softwiki-spa-ca536.appspot.com",
+        messagingSenderId: "563708094268",
+        appId: "1:563708094268:web:d42a55c163161d444de039"
+    });
+    const auth = firebase.auth();
+</script>
+
+<script src="./src/app.js" type="module"></script>
+
+</html>
