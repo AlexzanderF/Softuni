@@ -33,7 +33,7 @@ router.post('/login', isGuest, (req, res) => {
             res.redirect('/');
         })
         .catch(e => {
-            res.render('user/login', { error: e.message, ...req.body });
+            res.render('user/login', { error: e.message, data: { ...req.body } });
             console.error(e);
         });
 });
